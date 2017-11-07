@@ -1,0 +1,116 @@
+#masthead {
+	position: relative;
+	z-index: 20;
+	.bg-col(@blue);
+	.h(20);
+	padding-top: 20px;
+	//.bg-img('bridges-angel-bg.png');
+	background-image: url(/wp-content/themes/headway-tyneside-desktop/assets/css/img/header-angel.png), url(/wp-content/themes/headway-tyneside-desktop/assets/css/img/header-bridges.png), url(/wp-content/themes/headway-tyneside-desktop/assets/css/img/header-dots.png);
+	background-position: left bottom, right bottom, right top;
+	background-repeat: no-repeat, no-repeat, no-repeat;
+	.min-w(117);	
+	
+	a.logo {
+	display: block;
+	.w(36);
+	.h(12);
+	.trans-bg(@blue; 0.8);
+	.bg-img('header-logo.png');	
+	background-position: center center;
+	background-repeat: no-repeat;
+	}
+	
+	.email, .tel-num {
+	.font-size(2);
+	.line-h(2);	
+	padding: 5px;
+	.trans-bg(@blue; 0.8);
+		i {
+		color: @blue-lt;	
+		}
+	}
+	
+	.tel-num {
+	color: @wht;	
+	}
+	
+	.email {
+		a {
+		color: @wht;	
+		}
+	}
+	
+	.top-nav {
+	.h(6);	
+	padding-left: 10px;
+	padding-top: 10px;
+	
+		ul {
+		.min-h(5);
+		margin-bottom: 0px;	
+		}
+		
+		.top-level {
+		position: relative;
+		float: left;
+		margin-right: 10px;
+		.h(5);
+			a {
+			display: block;
+			padding: 5px 10px;
+			.bg-col(@wht);	
+			.font-size(1.6);
+			color: @blue;
+			text-decoration: none;
+			.border-radius(4px, 0, 0, 4px);
+			}
+			
+			&.menu-item-has-children {
+				&:after {
+				position: absolute;
+				right: 10px;
+				top: 0px;
+				.line-h(3.2);
+				content: "\f107";	
+				font-family: FontAwesome;
+				}
+				a {
+				padding-right: 30px;	
+				}
+				
+				.sub-menu {
+				position: absolute;
+				left: 0px;
+				top: 35px;
+				.bg-col(@blue);
+				.w(20);
+				.list-unstyled;
+				padding: 5px 10px 10px;
+				display: none;	
+				.border-radius(0, 4px, 4px, 0);
+					a {
+					.border-radius(0, 0, 0, 0);
+					padding: 5px 0px;
+					.bg-col(@trans);
+					color: @wht;	
+						&:hover, &:active, &:focus {
+						color: @blue-lt;
+						}
+					}
+				}	
+			}
+			
+			&:hover {
+				.sub-menu {
+				display: block;
+				.animated;
+				.fadeIn;
+				}
+			}
+		}
+	}
+}
+
+.top-nav {
+	
+}
