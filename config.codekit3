@@ -459,6 +459,23 @@
 		"sM": 0,
 		"sU": 0
 		},
+	"\/assets\/less\/sections.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/assets\/css\/sections.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
 	"\/assets\/less\/styles.less": {
 		"aP": 0,
 		"bl": 0,
@@ -526,6 +543,20 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/inc\/functions\/afc-options-functions.php",
+		"oF": 0
+		},
+	"\/inc\/functions\/event-tax.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/inc\/functions\/event-tax.php",
+		"oF": 0
+		},
+	"\/inc\/functions\/events-cpt.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/inc\/functions\/events-cpt.php",
 		"oF": 0
 		},
 	"\/inc\/functions\/theme-init.php": {
@@ -613,7 +644,7 @@
 "projectAttributes": {
 	"creationDate": 531659934,
 	"displayValue": "headway-tyneside-desktop",
-	"displayValueWasSetByUser": 0,
+	"displayValueWasSetByUser": 1,
 	"iconImageName": "brackets_green"
 	},
 "projectSettings": {

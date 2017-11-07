@@ -5,6 +5,12 @@ include (TEMPLATEPATH . '/inc/functions/theme-init.php');
 //ACF FUNCTIONS
 include (TEMPLATEPATH . '/inc/functions/afc-options-functions.php');
 
+//CUSTOM POST TYPES
+include (TEMPLATEPATH . '/inc/functions/events-cpt.php');
+
+//CUSTOM TAXONOMIES
+include (TEMPLATEPATH . '/inc/functions/event-tax.php');
+
 //THEME SUPPORT
 add_theme_support('html5', array('search-form'));
 add_theme_support( 'post-thumbnails', array( 'page', 'post') );

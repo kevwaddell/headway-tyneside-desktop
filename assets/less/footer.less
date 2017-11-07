@@ -1,0 +1,35 @@
+.site-footer {
+.bg-col(@grayDk);
+color: @wht;
+padding-top: 20px;
+padding-bottom: 20px;
+position: relative;
+z-index: 2;
+	.copyright {
+	.font-size(1.6);
+	.line-h(4);
+	color: @gray;	
+	}	
+	
+	.social-links {
+	margin-bottom: 0px;
+		a {
+		color: @gray;
+		text-decoration: none;
+			span {
+			.sr-only;	
+			}
+			i {
+			display: block;	
+			.w(4);
+			.h(4);
+			.text-center;
+			.font-size(2.5);
+			.line-h(4);	
+			}	
+			&:hover, &:active, &:focus {
+			color: @wht;
+			}
+		}	
+	}
+}

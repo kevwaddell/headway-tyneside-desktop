@@ -21,7 +21,7 @@
 				<div class="col-xs-6">
 					<div class="tel-num text-right"><i class="fa fa-phone"></i> 0772 523 2527</div>
 					<div class="email text-right"><a href="mailto:info@headwaytyneside.com"><i class="fa fa-envelope"></i> info@headwaytyneside.com</a></div>
-					<div class="social"></div>
+					<div class="social text-right"><?php wp_nav_menu(array( 'container' => '', 'theme_location' => 'social_links_menu', 'menu_class'  => 'list-inline','fallback_cb' => false ) ); ?></div>
 				</div>
 			</div>
 			<div class="top-nav">
