@@ -1,1 +1,1 @@
-!function($){$(document).ready(function(){}),$(window).bind("load",function(){})}(window.jQuery);
+!function($){var n="click";$(document).ready(function(){$("body").on("click",".menu-item-has-children > a",function(){return!1})}),$(window).bind("load",function(){})}(window.jQuery);

@@ -18,24 +18,8 @@ border-bottom: 1px solid @gray;
 		.grid-item {
 		padding: 20px;
 		margin: 15px;
-		.drop-shadow(0, 3px, 10px, 0.5);	
-		.animated;
-		.fadeInUp;
-			&#grid-item-1 {
-			animation-delay: 0.5s;	
-			}
-			&#grid-item-2 {
-			animation-delay: 0.75s;	
-			}
-			&#grid-item-3 {
-			animation-delay: 1.0s;	
-			}
-			&#grid-item-4 {
-			animation-delay: 1.25s;	
-			}
-			&#grid-item-5 {
-			animation-delay: 1.5s;	
-			}
+		.drop-shadow(0, 3px, 10px, 0.5);
+		overflow: hidden;	
 			a {
 				&:hover, &:active, &:focus {
 					.img {
@@ -48,6 +32,8 @@ border-bottom: 1px solid @gray;
 			background-position: center center;
 			background-repeat: no-repeat;
 			background-size: contain;
+			.animated;
+			.fadeInDown;
 			}
 			h3 {
 			.font-size(2);	
@@ -66,7 +52,9 @@ border-bottom: 1px solid @gray;
 			}
 			p {
 			margin-bottom: 0px;	
-			min-height: 80px;
+			min-height: 156px;
+			.font-size(1.8);
+			.line-h(2.6);
 			}
 		}
 	}
@@ -74,10 +62,11 @@ border-bottom: 1px solid @gray;
 	&.events-list {
 	overflow: hidden;
 		.grid-item {
-		padding: 20px 20px 20px 120px;
+		padding: 20px 100px 20px 120px;
 		margin: 30px 15px;
 		.drop-shadow(0, 3px, 10px, 0.5);
 		position: relative;	
+		overflow: hidden;
 			.calendar-date {
 			position: absolute;
 			left: 0px;
@@ -85,6 +74,8 @@ border-bottom: 1px solid @gray;
 			bottom: 0px;
 			.w(10);
 			.bg-col(@blue);	
+			.animated;
+			.fadeInLeft;
 				span {
 				display: block;
 				.text-center;	
@@ -97,9 +88,9 @@ border-bottom: 1px solid @gray;
 				}
 				.dy {
 				color: @wht;	
-				.font-size(5.5);
+				.font-size(6.5);
 				font-weight: 700;
-				.line-h(5.5);
+				.line-h(8.5);
 				letter-spacing: -0.09em;
 				}
 				.wd {
@@ -126,18 +117,22 @@ border-bottom: 1px solid @gray;
 			}
 			p {
 			margin-bottom: 0px;	
+			.font-size(1.8);
+			.line-h(2.6);
 			}
 			a.goto-link {
 			position: absolute;
-			right: 0px;
+			right: 20px;
 			top: 50%;
-			transform: translate(30%, -50%);	
+			margin-top: -20px;
 			.w(4);
 			.h(4);
 			.rounded(100%);
 			.bg-col(@blue);
 			text-decoration: none;
 			color: @wht;
+			.animated;
+			.fadeInRight;
 				i {
 				display: block;
 				.line-h(4);
@@ -192,4 +187,48 @@ border-bottom: 1px solid @gray;
 		width: 50px;	
 		}
 	}
+	
+	.contact-info {
+	margin-top: 10px;
+	.bg-col(@gray-lt);
+	padding: 20px;	
+		h4 {
+		margin-top: 0px;
+		text-transform: uppercase;	
+		}
+		p {
+		.font-size(1.5);
+		.line-h(1.8);	
+			&:last-child {
+			margin-bottom: 0px;	
+			}
+		}
+	}
+}
+
+#help-and-support-section {
+.bg-col(@gray);
+color: @wht;
+border-bottom: none;
+	.get-in-touch-box {
+	margin: 0px 15px;
+	.bg-col(@blue-lt);
+	padding: 50px;	
+	}	
+	h3 {
+	.font-size(4);
+	.line-h(4);	
+	margin-bottom: 20px;
+	margin-top: 0px;
+	}
+	.btn {
+	.bg-col(@trans);
+	.no-rounded;
+	border: 2px solid @wht;
+	color: @wht;
+		&:hover, &:active, &:focus {
+		.bg-col(@wht);
+		color: @blue;
+		}	
+	}	
 }

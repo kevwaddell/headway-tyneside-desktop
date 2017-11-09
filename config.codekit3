@@ -9,6 +9,13 @@
 	],
 "creatorBuild": "26097",
 "files": {
+	"\/archive-hw_events.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive-hw_events.php",
+		"oF": 0
+		},
 	"\/assets\/css\/fonts\/fontawesome-webfont.eot": {
 		"cB": 0,
 		"ft": 8192,
@@ -538,6 +545,13 @@
 		"oAP": "\/header.php",
 		"oF": 0
 		},
+	"\/inc\/functions\/afc-map-api.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/inc\/functions\/afc-map-api.php",
+		"oF": 0
+		},
 	"\/inc\/functions\/afc-options-functions.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -571,6 +585,27 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/index.php",
+		"oF": 0
+		},
+	"\/page.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/page.php",
+		"oF": 0
+		},
+	"\/parts\/events\/event-map.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/parts\/events\/event-map.php",
+		"oF": 0
+		},
+	"\/parts\/global\/support-box.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/parts\/global\/support-box.php",
 		"oF": 0
 		},
 	"\/parts\/home-page\/banner-hp.php": {
@@ -624,6 +659,20 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/sidebar.php",
+		"oF": 0
+		},
+	"\/single-hw_events.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/single-hw_events.php",
+		"oF": 0
+		},
+	"\/single.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/single.php",
 		"oF": 0
 		},
 	"\/style.css": {

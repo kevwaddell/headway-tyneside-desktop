@@ -49,7 +49,7 @@ $event_posts = get_posts($event_args);
 				<span class="dy"><?php echo $start_date->format('j'); ?></span>
 				<span class="wd"><?php echo $start_date->format('D'); ?></span>
 			</div>
-			<div class="entry">
+			<div class="list-entry">
 				<header class="event-item-header">
 					<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 					<?php if ($start_all_day) { ?>

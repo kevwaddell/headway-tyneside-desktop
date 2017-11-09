@@ -1,3 +1,5 @@
+	<?php get_template_part( 'parts/global/support', 'box' ); ?>
+	
 	</div><!-- .content-area -->
 	
 	<footer id="colophon" class="site-footer" role="contentinfo">
