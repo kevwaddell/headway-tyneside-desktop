@@ -144,6 +144,72 @@ border-bottom: 1px solid @gray;
 			}
 		}
 	}
+	
+	&.profile-list {
+		.profile {
+		padding: 20px 0px;
+		margin: 15px;
+		.drop-shadow(0, 3px, 10px, 0.5);
+		position: relative;
+		max-height: 475px;
+
+			.profile-img {
+			.h(15);
+			background-position: center center;
+			background-repeat: no-repeat;
+			background-size: cover;	
+			margin: 0px 20px;
+			}	
+			
+			h3.name {
+			padding-left: 20px;
+			padding-right: 20px;	
+			}
+			
+			.role {
+			font-weight: 700;
+			.font-size(1.6);
+			color: @gray;	
+			padding: 0px 20px;
+			}
+			
+			.biog {
+			position: relative;
+			overflow: hidden;
+			.h(19.8);
+			padding: 0px 20px 20px;
+				p {
+				.font-size(1.6);
+				.line-h(2.2);	
+				}
+				&:after {
+				content: "More...";
+				position: absolute;
+				right: 20px;
+				bottom: 0px;
+				padding: 5px;
+				.line-h(1.4);
+				.trans-bg(@grayDk; 0.7);
+				color: @wht;
+				z-index: 2;
+				}	
+			}
+			
+			&:hover {
+			z-index: 2;
+			.drop-shadow(0, 0px, 0px, 0);
+			.bg-col(@gray-lt);
+			cursor: cell;
+				.biog {
+					height: auto;
+					.bg-col(@gray-lt);
+					&:after {
+					display: none;	
+					}		
+				}
+			}
+		}
+	}
 }
 
 #contact-section {
@@ -169,6 +235,10 @@ border-bottom: 1px solid @gray;
 		.pull-right;
 		width: 49%;		
 		}	
+	}
+	
+	textarea {
+	.h(14);	
 	}
 	
 	.field-wrap {
@@ -231,4 +301,8 @@ border-bottom: none;
 		color: @blue;
 		}	
 	}	
+}
+
+#location-map {
+.h(35);		
 }

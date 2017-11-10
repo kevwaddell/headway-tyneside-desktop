@@ -8,7 +8,7 @@
 	
 	<?php get_template_part( 'parts/home-page/events', 'updates' ); ?>		
 	
-	<?php get_template_part( 'parts/home-page/contact', 'form' ); ?>	
+	<?php get_template_part( 'parts/global/contact', 'form' ); ?>	
 	
 	<?php endwhile; ?>
 	<?php endif; ?>

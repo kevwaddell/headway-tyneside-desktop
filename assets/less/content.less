@@ -14,6 +14,23 @@ article.page-content {
 		}	
 	}
 	
+	header.post-header {
+	padding-bottom: 20px;
+		.article-info {
+		font-weight: 700;
+		color: @gray;
+			time {
+			padding-right: 10px;	
+			}
+			span{
+			padding: 0px 10px;	
+			}
+			a {
+			color: @gray;	
+			}	
+		}	
+	}
+	
 	h2, h3, h4 {
 	color: @blue;	
 	}
@@ -36,6 +53,7 @@ article.page-content {
 	p, ul, ol {
 	.font-size(1.8);
 	.line-h(2.6);	
+	margin-bottom: 20px;
 	color: @grayDk;
 		&:last-child {
 		margin-bottom: 0px;	
@@ -44,6 +62,27 @@ article.page-content {
 	
 	.entry {
 	margin: 40px 15px 50px 15px;	
+		img.alignleft, img.alignright, img.alignnone {	
+		padding: 20px;
+		border: @gray 1px solid;
+		}
+		
+		img.alignleft {
+		margin: 0px 20px 20px 0px;	
+		}
+		
+		img.alignright {
+		margin: 0px 0px 20px 20px;	
+		}
+		
+		img.alignnone {
+		margin-bottom: 20px;	
+		}
+		
+		img {
+		max-width: 100%;	
+		}
+		
 	}
 	
 	#map {
@@ -55,13 +94,42 @@ article.page-content {
 	.animated;
 	.fadeInLeft;
 	margin-top: 25px;	
+	position: relative;
+		img {
+		width: 100%;	
+		}
 		.caption {
 		padding-top: 10px;
 		font-style: italic;
 		font-family: @serif-font;	
 		.font-size(1.8);
 		.line-h(2.6);
-		color: @gray;
+		color: @grayDk;
+		}
+		&.post-img {
+		.fadeInRight;	
+		}
+		
+		&.sml-img {
+		width: 50%;
+		float: left;
+		padding: 20px 10px 5px 10px;
+		margin: 0px;
+		.h(11.2);
+			&:hover {
+			z-index: 2;
+			cursor: cell;
+				img {
+				width: 200%;
+				position: absolute;
+				left: -50%;
+				top: -50%;
+				max-width: none;
+				border: 10px solid @wht;
+				.drop-shadow(0, 3px, 10px, 0.5);
+				}
+			}
+			
 		}
 	}
 	

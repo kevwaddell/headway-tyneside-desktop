@@ -587,6 +587,20 @@
 		"oAP": "\/index.php",
 		"oF": 0
 		},
+	"\/page-templates\/contact-page.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/page-templates\/contact-page.php",
+		"oF": 0
+		},
+	"\/page-templates\/team-page.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/page-templates\/team-page.php",
+		"oF": 0
+		},
 	"\/page.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -601,6 +615,20 @@
 		"oAP": "\/parts\/events\/event-map.php",
 		"oF": 0
 		},
+	"\/parts\/global\/contact-form.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/parts\/global\/contact-form.php",
+		"oF": 0
+		},
+	"\/parts\/global\/location-map.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/parts\/global\/location-map.php",
+		"oF": 0
+		},
 	"\/parts\/global\/support-box.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -613,13 +641,6 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/parts\/home-page\/banner-hp.php",
-		"oF": 0
-		},
-	"\/parts\/home-page\/contact-form.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/parts\/home-page\/contact-form.php",
 		"oF": 0
 		},
 	"\/parts\/home-page\/events-updates.php": {
