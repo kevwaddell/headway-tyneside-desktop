@@ -1,3 +1,20 @@
+.breadcrumbs {
+.bg-col(@blue-lt);
+padding: 20px 0px;	
+color: @wht;
+.font-size(1.6);
+.line-h(1.6);
+	i.fa-angle-right {
+	padding: 0px 10px;	
+	}
+	i.fa-home {
+	padding-left: 15px;	
+	}
+	a {
+	color: @wht;	
+	}
+}
+
 article.page-content {
 	margin: 0px;
 	min-height: 500px;
@@ -135,5 +152,24 @@ article.page-content {
 	
 	.table {
 	margin-top: 15px;	
+	}
+}
+
+.post-paging {
+.font-size(1.6);
+.line-h(1.6);
+.text-center;
+padding: 20px 0px;
+	a {
+	color: @blue;	
+		&.prev {
+		.pull-left;	
+		padding-left: 15px;
+		}
+	
+		&.next {
+		.pull-right;
+		padding-right: 15px;	
+		}
 	}
 }

@@ -1,5 +1,11 @@
 <?php get_header(); ?>
-
+ 	<?php if(function_exists('bcn_display')){ ?>
+	<div class="breadcrumbs" typeof="BreadcrumbList" vocab="https://schema.org/">
+		<div class="container">
+			<?php  bcn_display(); ?>
+		</div>
+	</div>
+	<?php } ?>
 	<?php if ( have_posts() ): while ( have_posts() ) : the_post(); ?>	
 		<?php
 		$sb_imgs = get_field( 'sb_imgs' );	
