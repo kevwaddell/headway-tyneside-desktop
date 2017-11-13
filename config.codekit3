@@ -587,6 +587,20 @@
 		"oAP": "\/index.php",
 		"oF": 0
 		},
+	"\/login-form.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/login-form.php",
+		"oF": 0
+		},
+	"\/lostpassword-form.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/lostpassword-form.php",
+		"oF": 0
+		},
 	"\/page-templates\/contact-page.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -671,11 +685,32 @@
 		"oAP": "\/parts\/home-page\/news-updates.php",
 		"oF": 0
 		},
+	"\/profile-form.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/profile-form.php",
+		"oF": 0
+		},
 	"\/README.txt": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/README.txt",
+		"oF": 0
+		},
+	"\/register-form.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/register-form.php",
+		"oF": 0
+		},
+	"\/resetpass-form.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/resetpass-form.php",
 		"oF": 0
 		},
 	"\/screenshot.png": {
