@@ -1,6 +1,6 @@
 <?php
 // INITIATE THEME SCRIPTS
-include (TEMPLATEPATH . '/inc/functions/theme-init.php');	
+include (STYLESHEETPATH . '/inc/functions/theme-init.php');	
 
 //ACF FUNCTIONS
 include (TEMPLATEPATH . '/inc/functions/afc-options-functions.php');
