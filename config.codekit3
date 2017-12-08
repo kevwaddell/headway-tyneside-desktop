@@ -16,6 +16,16 @@
 		"oAP": "\/archive-hw_events.php",
 		"oF": 0
 		},
+	"\/assets\/css\/external.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/assets\/css\/external-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"\/assets\/css\/fonts\/fontawesome-webfont.eot": {
 		"cB": 0,
 		"ft": 8192,
@@ -508,7 +518,7 @@
 		"ie": 1,
 		"iI": 0,
 		"ma": 0,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/assets\/css\/styles.css",
 		"oF": 2,
 		"oS": 1,
