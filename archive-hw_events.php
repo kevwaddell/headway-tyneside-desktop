@@ -1,20 +1,21 @@
 <?php get_header(); ?>
 <?php
 $diary_pg = get_page_by_path( 'diary' );	
+
+
 $event_args = array(
 'post_type'	=> 'hw_events',
 'posts_per_page' => -1,
 'order'	=> 'ASC',
 'meta_key'	=>	'start_date',
 'orderby'	=> 'meta_value_num',
-'meta_query' => array( 
-		array (
+'meta_query' => array (
 		'value' => array( date('Ymd'), date('Ymd', strtotime('last day of next month')) ), 
 		'compare' => 'BETWEEN'
 		)
-	)
 );
 $wp_query = new WP_Query($event_args);	
+//echo '<pre class="debug">';print_r($wp_query->posts);echo '</pre>';
 ?>
 	<article <?php post_class("page-content"); ?>>
 		<header class="page-title">
@@ -39,9 +40,8 @@ $wp_query = new WP_Query($event_args);
 				$start_time = get_field( 'start_time');
 				$end_time = get_field( 'end_time');
 				$start_all_day = get_field( 'all_day_start');
-				//echo '<pre>';print_r($date);echo '</pre>';	
 				?>
-				<article id="grid-item-<?php echo $k; ?>" class="grid-item">
+					<article id="grid-item-<?php echo $k; ?>" class="grid-item">
 					<div class="calendar-date">
 						<span class="mth"><?php echo $start_date->format('M'); ?></span>
 						<span class="dy"><?php echo $start_date->format('j'); ?></span>
@@ -66,7 +66,8 @@ $wp_query = new WP_Query($event_args);
 						<?php the_excerpt(); ?>
 						<a href="<?php the_permalink(); ?>" class="goto-link"><i class="fa fa-arrow-right fa-lg"></i><span class="sr-only">Read more</span></a>
 					</div>
-				</article>				
+				</article>
+						
 				<?php endwhile; ?>
 			</div>	
 		</section>

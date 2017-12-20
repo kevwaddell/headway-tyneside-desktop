@@ -670,6 +670,13 @@
 		"oAP": "\/parts\/events\/event-map.php",
 		"oF": 0
 		},
+	"\/parts\/events\/repeat-calc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/parts\/events\/repeat-calc.php",
+		"oF": 0
+		},
 	"\/parts\/global\/contact-form.php": {
 		"cB": 0,
 		"ft": 8192,
