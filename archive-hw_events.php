@@ -2,7 +2,6 @@
 <?php
 $diary_pg = get_page_by_path( 'diary' );	
 
-
 $event_args = array(
 'post_type'	=> 'hw_events',
 'posts_per_page' => -1,
@@ -23,12 +22,13 @@ $wp_query = new WP_Query($event_args);
 				<h1><?php echo get_the_title($diary_pg->ID); ?></h1>
 			</div>
 		</header>
-	<?php if ( have_posts() ): ?>
+
 		<section id="events-section" class="page-section events-list">
 			<div class="container">
 			<header class="section-header">
 				<h2><i class="fa fa-calendar fa-lg text-muted"></i> Up coming event information...</h2>
 			</header>
+			<?php if ( have_posts() ): ?>
 			<?php while ( have_posts() ) : the_post(); ?>	
 				<?php
 				$start_date_raw = get_field( 'start_date');
@@ -69,9 +69,15 @@ $wp_query = new WP_Query($event_args);
 				</article>
 						
 				<?php endwhile; ?>
+				<?php else: ?>
+				<br>
+				<div class="alert alert-info text-center">
+					<h3 class="text-uppercase" style="margin-top: 0px;">Come back soon!</h3>
+					<p>New events will appear here when available.
+				</div>
+				<?php endif; ?>
 			</div>	
 		</section>
-	<?php endif; ?>
 	</article>
 	
 <?php get_footer(); ?>

@@ -7,7 +7,7 @@
 		"uuidString": "D76C2261-4876-4178-BD3B-B306AE794E11"
 		}
 	],
-"creatorBuild": "26148",
+"creatorBuild": "26680",
 "files": {
 	"\/archive-hw_events.php": {
 		"cB": 0,
@@ -518,9 +518,9 @@
 		"ie": 1,
 		"iI": 0,
 		"ma": 0,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "\/assets\/css\/styles.css",
-		"oF": 2,
+		"oF": 3,
 		"oS": 1,
 		"rU": 0,
 		"sI": 0,
@@ -670,13 +670,6 @@
 		"oAP": "\/parts\/events\/event-map.php",
 		"oF": 0
 		},
-	"\/parts\/events\/repeat-calc.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/parts\/events\/repeat-calc.php",
-		"oF": 0
-		},
 	"\/parts\/global\/contact-form.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -798,7 +791,8 @@
 	"creationDate": 531659934,
 	"displayValue": "headway-tyneside-desktop",
 	"displayValueWasSetByUser": 1,
-	"iconImageName": "brackets_green"
+	"iconImageName": "brackets_green",
+	"iconImageWasSetByUser": 0
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
@@ -806,6 +800,7 @@
 	"animateCSSInjections": 1,
 	"autoBuildNewItems": 1,
 	"autoprefixerBrowserString": "> 1%, last 2 versions, Firefox ESR, Opera 12.1",
+	"autoprefixerEnableIEGrid": 0,
 	"babelAuxiliaryCommentAfter": "",
 	"babelAuxiliaryCommentBefore": "",
 	"babelConfigFileHandlingType": 0,
@@ -1369,6 +1364,10 @@
 		"id-match": {
 			"active": 0,
 			"optionString": "'^[a-z]+([A-Z][a-z]+)*$', {'properties': false, 'onlyDeclarations': true}"
+			},
+		"implicit-arrow-linebreak": {
+			"active": 0,
+			"optionString": "'beside'"
 			},
 		"indent": {
 			"active": 0,
@@ -2596,6 +2595,7 @@
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
+		"outputFormat": 0,
 		"quality": 100
 		},
 	"languageDefaultsJS": {
