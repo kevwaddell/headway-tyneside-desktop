@@ -72,8 +72,8 @@ $wp_query = new WP_Query($event_args);
 				<?php else: ?>
 				<br>
 				<div class="alert alert-info text-center">
-					<h3 class="text-uppercase" style="margin-top: 0px;">Come back soon!</h3>
-					<p>New events will appear here when available.
+					<h3 class="text-uppercase" style="margin-top: 0px;">Please check back soon!</h3>
+					<p>There are no future events in the diary at the moment.</p>
 				</div>
 				<?php endif; ?>
 			</div>	
