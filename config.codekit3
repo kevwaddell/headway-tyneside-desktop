@@ -202,6 +202,17 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/assets\/css\/img\/newsletter-cover-bg.png": {
+		"ft": 32768,
+		"iS": 52026,
+		"oA": 0,
+		"oAP": "\/assets\/css\/img\/newsletter-cover-bg.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"\/assets\/css\/styles.css": {
 		"aP": 1,
 		"bl": 0,
@@ -521,7 +532,7 @@
 		"oA": 0,
 		"oAP": "\/assets\/css\/styles.css",
 		"oF": 3,
-		"oS": 1,
+		"oS": 0,
 		"rU": 0,
 		"sI": 0,
 		"sM": 0,
@@ -647,6 +658,20 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/page-templates\/events-page.php",
+		"oF": 0
+		},
+	"\/page-templates\/meetings-page.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/page-templates\/meetings-page.php",
+		"oF": 0
+		},
+	"\/page-templates\/newsletters-page.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/page-templates\/newsletters-page.php",
 		"oF": 0
 		},
 	"\/page-templates\/team-page.php": {
