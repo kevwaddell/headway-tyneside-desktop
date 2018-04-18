@@ -7,10 +7,11 @@ Template Name: Regular Meetings Page
 <?php get_header(); ?>
 
 	<?php if ( have_posts() ): while ( have_posts() ) : the_post(); ?>	
+	<?php $diary_pg = get_page_by_path( 'diary' ); ?>
 	<article <?php post_class("page-content"); ?>>
 			<header class="page-title">
 				<div class="container">
-					<h1><?php the_title(); ?></h1>
+					<h1><?php echo get_the_title($diary_pg->ID); ?></h1>
 				</div>
 			</header>
 			<div class="container">
@@ -44,7 +45,7 @@ Template Name: Regular Meetings Page
 		<section id="meetings-section" class="page-section events-list">
 			<div class="container">
 			<header class="section-header">
-				<h2><i class="fa fa-users fa-lg text-muted"></i> Group Meetings</h2>
+				<h2><i class="fa fa-users fa-lg text-muted"></i> <?php the_title(); ?></h2>
 			</header>
 				<?php if ($sg_meeting_active) { 
 				$sg_meeting_img = get_field( 'sg_meeting_img', 'options' );
