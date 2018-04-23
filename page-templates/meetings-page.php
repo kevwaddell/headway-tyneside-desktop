@@ -50,6 +50,7 @@ Template Name: Regular Meetings Page
 				<?php if ($sg_meeting_active) { 
 				$sg_meeting_img = get_field( 'sg_meeting_img', 'options' );
 				$sg_meeting_title = get_field( 'sg_meeting_title', 'options' );
+				$sg_frequency = get_field( 'sg_frequency', 'options' );
 				$sg_meeting_date = get_field( 'sg_meeting_date', 'options' );
 				$sg_meeting_time = get_field( 'sg_meeting_time', 'options' );
 				$sg_meeting_venue = get_field( 'sg_meeting_venue', 'options' );
@@ -67,6 +68,7 @@ Template Name: Regular Meetings Page
 						</div>
 						<div class="col-xs-8">
 								<div class="title"><?php echo $sg_meeting_title; ?></div>
+								<div class="frequency"><?php echo $sg_frequency; ?></div>
 								<div class="date">Date: <?php echo $sg_meeting_date; ?></div>
 								<div class="time">Time: <?php echo $sg_meeting_time; ?></div>	
 								<div class="venue">Venue: <?php echo $sg_meeting_venue; ?></div>	
@@ -83,6 +85,7 @@ Template Name: Regular Meetings Page
 				<?php if ($ps_meeting_active) { 
 				$ps_meeting_img = get_field( 'ps_meeting_img', 'options' );
 				$ps_meeting_title = get_field( 'ps_meeting_title', 'options' );
+				$ps_frequency = get_field( 'ps_frequency', 'options' );
 				$ps_meeting_date = get_field( 'ps_meeting_date', 'options' );
 				$ps_meeting_time = get_field( 'ps_meeting_time', 'options' );
 				$ps_meeting_venue = get_field( 'ps_meeting_venue', 'options' ); 
@@ -99,6 +102,7 @@ Template Name: Regular Meetings Page
 						</div>
 						<div class="col-xs-8">
 							<div class="title"><?php echo $ps_meeting_title; ?></div>
+							<div class="frequency"><?php echo $ps_frequency; ?></div>
 							<div class="date">Date: <?php echo $ps_meeting_date; ?></div>
 							<div class="time">Time: <?php echo $ps_meeting_time; ?></div>	
 							<div class="venue">Venue: <?php echo $ps_meeting_venue; ?></div>	
@@ -115,6 +119,7 @@ Template Name: Regular Meetings Page
 				<?php if ($sc_meeting_active) { 
 				$sc_meeting_img = get_field( 'sc_meeting_img', 'options' );
 				$sc_meeting_title = get_field( 'sc_meeting_title', 'options' );
+				$sc_frequency = get_field( 'sc_frequency', 'options' );
 				$sc_meeting_date = get_field( 'sc_meeting_date', 'options' );
 				$sc_meeting_time = get_field( 'sc_meeting_time', 'options' );
 				$sc_meeting_venue = get_field( 'sc_meeting_venue', 'options' ); 
@@ -131,6 +136,7 @@ Template Name: Regular Meetings Page
 						</div>
 						<div class="col-xs-8">
 							<div class="title"><?php echo $sc_meeting_title; ?></div>
+							<div class="frequency"><?php echo $sc_frequency; ?></div>
 							<div class="date">Date: <?php echo $sc_meeting_date; ?></div>
 							<div class="time">Time: <?php echo $sc_meeting_time; ?></div>	
 							<div class="venue">Venue: <?php echo $sc_meeting_venue; ?></div>	
