@@ -46,17 +46,17 @@ Template Name: Regular Meetings Page
 				<h2><i class="fa fa-users fa-lg text-muted"></i> <?php the_title(); ?></h2>
 			</header>
 				<?php foreach ($regular_meetings as $rm) { 
-				$sg_meeting_img = $rm['img'];
-				$sg_meeting_title = $rm['title'];
-				$sg_frequency = $rm['frequency'];
-				$sg_meeting_date = $rm['date'];
-				$sg_meeting_time = $rm['time'];
-				$sg_meeting_venue = $rm['venue'];
-				$sg_meeting_desc = $rm['description'];
-				$sg_meeting_contact_name = $rm['contact_name'];
-				$sg_meeting_contact_email = $rm['contact_email'];
-				$sg_meeting_contact_tel = $rm['contact_tel'];
-				$feat_img = wp_get_attachment_image_src($sg_meeting_img, 'medium' );
+				$meeting_img = $rm['img'];
+				$meeting_title = $rm['title'];
+				$frequency = $rm['frequency'];
+				$meeting_date = $rm['date'];
+				$meeting_time = $rm['time'];
+				$meeting_venue = $rm['venue'];
+				$meeting_desc = $rm['description'];
+				$meeting_contact_name = $rm['contact_name'];
+				$meeting_contact_email = $rm['contact_email'];
+				$meeting_contact_tel = $rm['contact_tel'];
+				$feat_img = wp_get_attachment_image_src($meeting_img, 'medium' );
 				//echo '<pre class="debug">';print_r($feat_img);echo '</pre>';	
 				?>
 				<div class="meeting-details">
@@ -65,15 +65,15 @@ Template Name: Regular Meetings Page
 							<div class="meeting-img" style="background-image: url(<?php echo $feat_img[0]; ?>)"></div>
 						</div>
 						<div class="col-xs-8">
-								<div class="title"><?php echo $sg_meeting_title; ?></div>
-								<div class="frequency"><?php echo $sg_frequency; ?></div>
-								<div class="date">Date: <?php echo $sg_meeting_date; ?></div>
-								<div class="time">Time: <?php echo $sg_meeting_time; ?></div>	
-								<div class="venue">Venue: <?php echo $sg_meeting_venue; ?></div>	
-								<div class="desc"><?php echo $sg_meeting_desc; ?></div>
-								<div class="contact">Contact: <?php echo $sg_meeting_contact_name; ?><br>
-								Email: <a href="mailto:<?php echo $sg_meeting_contact_email; ?>"><?php echo $sg_meeting_contact_email; ?></a><br>
-								Tel: <?php echo $sg_meeting_contact_tel; ?>
+								<div class="title"><?php echo $meeting_title; ?></div>
+								<div class="frequency"><?php echo $frequency; ?></div>
+								<div class="date">Date: <?php echo $meeting_date; ?></div>
+								<div class="time">Time: <?php echo $meeting_time; ?></div>	
+								<div class="venue">Venue: <?php echo $meeting_venue; ?></div>	
+								<div class="desc"><?php echo $meeting_desc; ?></div>
+								<div class="contact">Contact: <?php echo $meeting_contact_name; ?><br>
+								Email: <a href="mailto:<?php echo $meeting_contact_email; ?>"><?php echo $meeting_contact_email; ?></a><br>
+								Tel: <?php echo $meeting_contact_tel; ?>
 								</div>
 						</div>
 					</div>
