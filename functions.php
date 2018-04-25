@@ -59,4 +59,11 @@ function pagination_bar() {
     }
 }
 
+function weeks($month, $year){
+    $firstday = date("w", mktime(0, 0, 0, $month, 1, $year)); 
+    $lastday = date("t", mktime(0, 0, 0, $month, 1, $year));
+    $count_weeks = 1 + ceil(($lastday-8+$firstday)/7);
+    return $count_weeks;
+} 
+
 ?>
